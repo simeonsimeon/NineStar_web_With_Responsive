@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    width: 94%;
+    margin: auto;
+}
+.Header{
+    position: relative;
+    box-shadow: 0 0 10px -4px;
+}
+.Header .Full-Header h1{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: .7;
+    padding: 20px 0px 20px 0px;
+}
+.Header .Full-Header{
+    display: flex;
+    justify-content:space-between;
+}
+.Header .Full-Header .Right-Header{
+    /* width: 65%; */
+}
+.Header .Full-Header .Right-Header > ul{
+    position: absolute;
+    width: 100%;
+    background:rgb(223, 248, 255);
+    left: 0;
+    top: 90px;
+    box-shadow: 0 0 40px -30px;
+    display: none;
+}
+.Header .Full-Header .Right-Header > ul > li{
+    line-height: 50px;
+    font-size: 1.2rem;
+    padding-left: 15px;
+}
+.Header .Full-Header .Right-Header > ul > li i{
+   font-size: 18px;
+}
+.Header .Full-Header .Right-Header > ul > li a{
+   color: black;
+   opacity: .8;
+}
+.Header .Full-Header .Right-Header button{
+    background: orange;
+    border-radius: 7px;
+    border: none;
+    opacity: 0;
+    
+}
+.Header .Full-Header .Right-Header div{
+    font-size: 40px;
+    padding: 14px 0 10px 0px;
+    opacity: .4;
+}
+/* DROPDOWN */
+.Header .Full-Header .Right-Header > ul > li:nth-child(5){
+    position: relative;
+}
+.Header .Full-Header .Right-Header > ul > li:nth-child(5) ul{
+    position: absolute;
+    top: -50px;
+    left: 30%;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: -10;
+}
+/* LI Hover  */
+.Header .Full-Header .Right-Header > ul > li:hover > a{
+    color:orangered;
+}
+.Header .Full-Header .Right-Header > ul > li:nth-child(5):hover ul{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+}
+.Header .Full-Header .Right-Header > ul > li:nth-child(5):hover ul li:hover a{
+    color:orangered;
+}
+.Header .Full-Header .Right-Header > ul > li:nth-child(5) ul{
+    background-color: aliceblue;
+    padding: 0 40px 0 40px;
+    box-shadow: 0 0 50px -40px;
+}
+
+
+
+
+/* BANNER */
+.Hero{
+    background: #fef8f5;
+}
+.Hero .flex-hero{
+    display: flex;
+    flex-flow: column-reverse;
+}
+.Hero .flex-hero > div{
+   width: 100%;
+}
+.Hero .flex-hero .hero-img div{
+    width: 80%;
+    margin:auto;
+    padding-top: 46px;
+}
+.Hero .flex-hero .hero-img img{
+    width: 100%;
+}.Hero .flex-hero .hero-cont{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.Hero .flex-hero .hero-cont h2{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: .9;
+}
+.Hero .flex-hero .hero-cont p{
+    font-size: 1.4rem;
+    margin:23px 0 23px 0;
+    opacity: .6;
+}
+.Hero .flex-hero .hero-cont button{
+    font-size: 1.2rem;
+    color: white;
+    padding: 9px 34px 9px 34px;
+    background-color: orangered;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* About */
+.about .fl-about > div{
+    width: 100%;
+}
+.about .fl-about{
+    padding: 50px 0 40px 0;
+}
+.about .fl-about > .img-about{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.about .fl-about > .img-about img{
+    width: 90%;
+} 
+.about .fl-about .cont-about .cont-about-first h3{
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .7;
+    padding-top: 25px;
+}
+.about .fl-about .cont-about .cont-about-first p{
+    font-size: 1rem;
+    margin:23px 0 23px 0;
+    opacity: .6;
+}
+.about .fl-about .cont-about .cont-about-second img{
+    width: 60px;
+}
+.about .fl-about .cont-about .cont-about-second h4{
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .5;
+    padding-bottom: 15px;
+}
+.about .fl-about .cont-about .cont-about-second p{
+        font-size: 1rem;
+        opacity: .6;
+        margin-bottom: 30px;
+}
+.about .fl-about .cont-about .cont-about-third p{
+    font-size: 1rem;
+    opacity: .6;
+}
+.about .fl-about .cont-about .cont-about-third i{
+    font-size: 60px;
+    color:orange;
+}
+.about .fl-about .cont-about .cont-about-third h4{
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .5;
+    padding-bottom: 15px;
+}
+
+
+
+@media(min-width:650px){
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    .Header .Full-Header .Right-Header > ul > li:nth-child(5) ul{
+        left: 30%;
+    }
+    .Header .Full-Header .Right-Header > ul > li:nth-child(5) ul{
+        background-color: aliceblue;
+        padding: 0 40px 0 40px;
+        box-shadow: 0 0 50px -40px;
+    }
+    .Hero .flex-hero .hero-cont h2{
+        font-size: 2.4rem;
+    }
+    .Hero .flex-hero .hero-cont{
+        padding-bottom: 70px;
+    }
+    .about .fl-about .cont-about .cont-about-first p{
+        font-size: 1.2rem;
+    }
+    .about .fl-about .cont-about .cont-about-second p{
+        font-size: 1.2rem;
+        width: 95%;
+    }
+    .about .fl-about .cont-about .cont-about-third p{
+        font-size: 1.2rem;
+    }
+    .about .fl-about .cont-about{
+        display: flex;
+      flex-wrap: wrap;
+    }
+    .about .fl-about > .img-about img{
+        width: 70%;
+    } 
+    .about .fl-about .cont-about .cont-about-first {
+        width: 100%;
+    }
+    
+    .about .fl-about .cont-about .cont-about-second {
+        width: 50%;
+    }
+    .about .fl-about .cont-about .cont-about-third {
+        width: 50%;
+    }
+   
+}
+@media(min-width:1000px){
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    .Header .Full-Header h1{
+        font-size: 2.4rem;
+        font-weight: 600;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        opacity: .7;
+        padding: 10px 0px 10px 0px;
+    }
+    .Header .Full-Header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Header .Full-Header .Right-Header{
+        /* width: 70%; */
+    }
+    .Header .Full-Header .Right-Header > ul{
+        display: block;
+        position: relative;
+        top: 0;
+        background-color: white;
+        justify-content:space-evenly;
+        box-shadow: 0 0 0 0;
+    }
+    .Header .Full-Header .Right-Header > ul > li{
+        line-height: 70px;
+        font-size: 1.1rem;
+        padding: 0;
+        padding-left: 1rem;
+        
+        display: inline-block;
+        
+    }
+    .Header .Full-Header .Right-Header div {
+          display:none;
+    }
+    .Header .Full-Header .Right-Header button{
+        background: orange;
+    border-radius: 20px;
+    border: none;
+    padding: .7rem 1.7rem .7rem 1.7rem;
+    opacity: 1;
+    margin-left: 1.2rem;
+    }
+    .Header .Full-Header .Right-Header > ul > li:nth-child(5) ul{
+        background-color:white;
+        top: 70px;
+        padding: 0 40px 0 40px;
+        left: -2px;
+        box-shadow: 0 0 10px -6px red;
+        border-radius: 7px;
+    }
+
+    .Hero .flex-hero{
+        display: flex;
+        flex-flow:row;
+    }
+
+    .Hero .flex-hero > div{
+        width: 50%;
+     }
+     .Hero .flex-hero .hero-img div{
+         width: 100%;
+         margin:auto;
+         padding-top: 120px;
+     }
+     .Hero .flex-hero .hero-img img{
+         width: 100%;
+         animation:up-down 2s ease-in-out infinite alternate-reverse both;
+     }
+     .Hero .flex-hero .hero-cont{
+         padding-top: 150px;
+         padding-bottom: 100px;
+     }
+     @keyframes up-down {
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(-50px);
+        }
+     }
+     .Hero .flex-hero .hero-cont h2{
+        font-size: 3.6rem;
+        opacity: .7;
+     }
+     .Hero .flex-hero .hero-cont p{
+        font-size: 1.60rem;
+        width: 80%;
+        opacity: .4;
+     }
+     .about .fl-about{
+        display: flex;
+        justify-content: space-between;
+     }
+     .about .fl-about > div{
+        width: 50%;
+     }
+     .about .fl-about .img-about{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     .about .fl-about .img-about img{
+        width: 90%;
+     }
+
+
+
+
+
+
+
+
+
+
+
+}
