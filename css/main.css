@@ -202,7 +202,69 @@ li{
     opacity: .5;
     padding-bottom: 15px;
 }
+.service{
+    background: #fef8f5;
+}
+.service .sec-title{
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fef8f5;
 
+}
+.service .sec-title h4{
+    font-size: 1.6rem;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .6;
+    margin-bottom: 20px;
+}
+.service .sec-title h2{
+    font-size: 2.1rem;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+.service .sec-title div{
+   width: 55px;
+   height: 2.3px;
+   background: orangered;
+}
+.service .sec-row > div{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px -16px;
+    border-radius: 7px;
+}
+.service .sec-row > div i{
+    color: orangered;
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+.service .sec-row > div h4{
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    opacity: .7;
+}
+.service .sec-row > div p{
+  font-size: 1.1rem;
+  padding-bottom: 30px;
+  opacity: .8;
+  width: 90%;
+}
 
 
 @media(min-width:650px){
@@ -250,6 +312,17 @@ li{
     }
     .about .fl-about .cont-about .cont-about-third {
         width: 50%;
+    }
+    .service .sec-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service .sec-row > div{
+        width: 47.6%;
+    }
+    .service .sec-row > div p{
+        font-size: 1.25rem;
+        opacity: .5;
     }
    
 }
@@ -327,8 +400,8 @@ li{
          animation:up-down 2s ease-in-out infinite alternate-reverse both;
      }
      .Hero .flex-hero .hero-cont{
-         padding-top: 150px;
-         padding-bottom: 100px;
+         padding-top: 70px;
+         padding-bottom: 70px;
      }
      @keyframes up-down {
         0%{
@@ -364,6 +437,23 @@ li{
      .about .fl-about .img-about img{
         width: 90%;
      }
+
+     .service .sec-row{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+    .service .sec-row > div{
+        width:23%;
+        margin-right: 0px;
+        /* margin-left: 20px; */
+        border-radius: 10px;
+    }
+    .service .sec-row > div p{
+        font-size: 1.1rem;
+        opacity: 1;
+        color: rgb(117, 117, 117);
+    }
 
 
 
