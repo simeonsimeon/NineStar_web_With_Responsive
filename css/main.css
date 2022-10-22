@@ -6,8 +6,17 @@
 
 .Bdy{
     overflow: hidden;
-    background: rgba(0 0 0/.2);
+    /* filter: blur(10px); */
+    /* background: rgba(0 0 0/.5); */
 }
+.try{
+    
+    /* filter: blur(10px); */
+}
+.wh{
+     filter: blur(0px);
+}
+
 .blur{
     background: rgba(0 0 0/.8);
     /* z-index: 10; */
@@ -781,6 +790,7 @@ li{
 }
 .join{
     background: #fef8f5;
+    padding-bottom: 20px;
 }
 .join .flex-join .join-1{
     display: flex;
