@@ -400,6 +400,12 @@ li{
 .port-full{
     padding-bottom: 60px;
 }
+.h{
+    margin-top: 20px;
+}
+.m{
+    margin-top: 20px;
+}
 .faq{
     background: #fef8f5;
     padding-bottom: 50px;
@@ -562,6 +568,10 @@ li{
 }
 .team .team-full{
     padding-bottom: 60px;
+}
+.team .team-full > div .team-cont h2{
+    /* vertical-align: bottom; */
+    margin-top: 150px;
 }
 .client{
     background: #fef8f5;
@@ -1010,6 +1020,22 @@ li{
 	font-size:20px;
 	font-weight:600;
 }
+.footer-whole li:hover a{
+    color: orangered;
+}
+.footer-whole .foot4 {
+    padding-bottom: 20px;
+}
+.footer-whole .foot4 a:hover{
+    background-color: rgb(161, 159, 159);
+}
+.copy{
+    background: #fef8f5;
+}
+.copy .flex-copy{
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
 
 
 
@@ -1082,6 +1108,13 @@ li{
         margin-top: 0px;
         margin-left: 20px;
     }
+    .m{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .h{
+        margin-top: 20px;
+    }
     .team .team-full{
         display: flex;
         flex-wrap: wrap;
@@ -1120,7 +1153,8 @@ li{
         flex-wrap:wrap;
     }
     .footer-whole ul li i{
-        color: #1c84e3;
+        color: orangered;
+        opacity: .7;
     }
     .footer-whole ul li a{
         color:black;
@@ -1207,6 +1241,12 @@ li{
         font-size:20px;
         font-weight:600;
     }
+    .copy .flex-copy{
+        display: flex;
+        text-align:start;
+        justify-content: space-between;
+    }
+
 }
 @media(min-width:1000px){
     .container{
@@ -1355,6 +1395,15 @@ li{
     }
     .port-first:nth-child(3){
         margin-top: 0px;
+        margin-left: 20px;
+    }
+    .tap{
+        margin-left: 0;
+    }
+    .tap-l{
+        margin-left: 20px;
+    }
+    .hs{
         margin-left: 20px;
     }
     .team .team-full > div{
